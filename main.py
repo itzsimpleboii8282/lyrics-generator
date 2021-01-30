@@ -1,6 +1,6 @@
 import json
 import requests
-name = input("Enter a song name for getting lyrics : ")
+name = input("Enter a song name for getting lyrics: ")
 lyrics = requests.get(f'https://some-random-api.ml/lyrics?title={name}')
 lyricsdata = lyrics.json()
 songname = (str(lyricsdata['title']))
